@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cjenik_smjestaja 
+    xmlns:xsi="http://w3.org"
+    xsi:noNamespaceSchemaLocation="http://mint.hr">
+    
+    <obveznik>
+        <ime_prezime>Damir Arambašić</ime_prezime>
+        <oib>05326952309</oib>
+        <adresa_objekta>Banova ul. 97, 31000 Osijek</adresa_objekta>
+        <vrsta_smjestaja>Apartman</vrsta_smjestaja>
+        <kategorija_zvjezdice>4</kategorija_zvjezdice>
+        <evisitor_id>_________________</evisitor_id>
+    </obveznik>
+
+    <usluge>
+        <!-- Glavna usluga: Noćenje -->
+        <stavka_cjenika>
+            <id>1</id>
+            <naziv_usluge>Noćenje u apartmanu (redovna cijena)</naziv_usluge>
+            <jedinica_naplate>po noćenju</jedinica_naplate>
+            <cijena_bez_pdv>80.00</cijena_bez_pdv>
+            <stopa_pdv>0.00</stopa_pdv>
+            <iznos_pdv>0.00</iznos_pdv>
+            <ukupna_cijena_eur>80.00</ukupna_cijena_eur>
+            <minimalan_boravak_dana>2</minimalan_boravak_dana>
+            <usidrena_cijena_10_09_2026>80.00</usidrena_cijena_10_09_2026>
+            <poseban_oblik_prodaje>Ne</poseban_oblik_prodaje>
+            <napomena>Usluga je oslobođena PDV-a prema čl. 90. st. 2. Zakona o PDV-u.</napomena>
+        </stavka_cjenika>
+
+        <!-- Boravišna pristojba -->
+        <stavka_cjenika>
+            <id>2</id>
+            <naziv_usluge>Turistička (boravišna) pristojba</naziv_usluge>
+            <jedinica_naplate>po osobi/noćenju</jedinica_naplate>
+            <cijena_bez_pdv>0.00</cijena_bez_pdv>
+            <stopa_pdv>0.00</stopa_pdv>
+            <iznos_pdv>0.00</iznos_pdv>
+            <ukupna_cijena_eur>0.00</ukupna_cijena_eur>
+            <minimalan_boravak_dana>0</minimalan_boravak_dana>
+            <usidrena_cijena_10_09_2026>0.00</usidrena_cijena_10_09_2026>
+            <poseban_oblik_prodaje>Ne</poseban_oblik_prodaje>
+            <napomena>Uključeno u cijenu noćenja.</napomena>
+        </stavka_cjenika>
+
+        <!-- Završno čišćenje -->
+        <stavka_cjenika>
+            <id>3</id>
+            <naziv_usluge>Završno čišćenje apartmana</naziv_usluge>
+            <jedinica_naplate>jednokratno</jedinica_naplate>
+            <cijena_bez_pdv>0.00</cijena_bez_pdv>
+            <stopa_pdv>0.00</stopa_pdv>
+            <iznos_pdv>0.00</iznos_pdv>
+            <ukupna_cijena_eur>0.00</ukupna_cijena_eur>
+            <minimalan_boravak_dana>0</minimalan_boravak_dana>
+            <usidrena_cijena_10_09_2026>0.00</usidrena_cijena_10_09_2026>
+            <poseban_oblik_prodaje>Ne</poseban_oblik_prodaje>
+            <napomena>Uključeno u cijenu noćenja.</napomena>
+        </stavka_cjenika>
+
+        <!-- Prijava gosta -->
+        <stavka_cjenika>
+            <id>4</id>
+            <naziv_usluge>Prijava gosta (eVisitor)</naziv_usluge>
+            <jedinica_naplate>po gostu</jedinica_naplate>
+            <cijena_bez_pdv>0.00</cijena_bez_pdv>
+            <stopa_pdv>0.00</stopa_pdv>
+            <iznos_pdv>0.00</iznos_pdv>
+            <ukupna_cijena_eur>0.00</ukupna_cijena_eur>
+            <minimalan_boravak_dana>0</minimalan_boravak_dana>
+            <usidrena_cijena_10_09_2026>0.00</usidrena_cijena_10_09_2026>
+            <poseban_oblik_prodaje>Ne</poseban_oblik_prodaje>
+            <napomena>Uključeno u cijenu noćenja.</napomena>
+        </stavka_cjenika>
+    </usluge>
+</cjenik_smjestaja>
+

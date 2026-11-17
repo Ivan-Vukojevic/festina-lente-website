@@ -90,17 +90,204 @@ body, html {
 <div class="fl-content fl-container fl-padding-64" id="omeni">
   <h3 class="fl-center">O MENI</h3>
   <p class="fl-center"><em>Apartman Festina Lente</em></p>
-  <p>Prostrani apartman površine 110m2 smješten je u srcu Donjeg Grada Osijeka. Apartman s ponosom nosi 4 zvjezdice, što garantira visok standard kvalitete i udobnosti. Nudi prekrasan pogled na rijeku Dravu i osječku promenadu koja je u neposrednoj blizini (30m), pogodnu za rekreaciju, šetnju i vožnju biciklima. U sklopu apartmana je osigurano besplatno parkirno mjesto (garaža na upit), što daje dodatnu pogodnost i sigurnost. Terasa je prostrana i moderna, idealna za odmor i opuštanje. Apartman je idealan za obitelj ili parove koji traže udoban i moderan smještaj. Interijer je pažljivo uređen s naglaskom na funkcionalnost i estetiku. Prostrane sobe pružaju dovoljno prostora za opuštanje, dok moderna kuhinja s otokom i blagovaonskim stolom čini pripremu obroka pravim užitkom. Velika kupatila (jedno s kadom, drugo walk in) opremljena su svim potrebnim sadržajima za vašu udobnost.</p>
+  <p>Prostrani apartman površine 110m2 smješten je u srcu Donjeg Grada Osijeka. Apartman s ponosom nosi 4 zvjezdice, što garantira visok standard kvalitete i udobnosti. Nudi prekrasan pogled na rijeku Dravu i osječku promenadu koja je u neposrednoj blizini (30m), pogodnu za rekreaciju, šetnju i vožnju biciklima. U sklopu apartmana je osigurano besplatno parkirno mjesto, što daje dodatnu pogodnost i sigurnost. Terasa je prostrana i moderna, idealna za odmor i opuštanje. Apartman je idealan za obitelj ili parove koji traže udoban i moderan smještaj. Interijer je pažljivo uređen s naglaskom na funkcionalnost i estetiku. Prostrane sobe pružaju dovoljno prostora za opuštanje, dok moderna kuhinja s otokom i blagovaonskim stolom čini pripremu obroka pravim užitkom. Velika kupatila (jedno s kadom, drugo walk in) opremljena su svim potrebnim sadržajima za vašu udobnost.</p>
   </p>
   <div class="fl-row">
     <div class="fl-col m6 fl-center fl-padding-large">
       <p><b>Apartman Festina Lente Osijek</b></p><br>
-      <img src="./images/festina-lente-hodnik.webp" class="fl-round fl-image" alt="Apartman Festina Lente" width="500" height="333" loading="lazy">
+      
+      <!-- Dodan inline stil za aspect-ratio i height:auto koji rješava problem s lazy-loadingom na mobitelu -->
+      <img src="./images/festina-lente-hodnik.webp" 
+           class="fl-round fl-image" 
+           alt="Apartman Festina Lente" 
+           width="500" 
+           height="333" 
+           style="aspect-ratio: 500 / 333 !important; height: auto !important; width: 100% !important; max-width: 500px !important; object-fit: cover !important;" 
+           loading="lazy">
     </div>
     <div class="fl-col m6 fl-hide-small fl-padding-large">
       <p>Osim toga, apartman omogućava šetnju po jednoj od najljepših promenada u Osijeku koja je povezana sa centrom grada. U blizini je trg Donjeg Grada, dječje igralište, restorani, kafići i trgovine - sve što je potrebno da bi vaš kraći ili dulji boravak bio ugodan.</p>
     </div>
-  </div>
+</div>
+
+</div>
+
+<div class="fl-content fl-container fl-padding-64">
+  <h2 class="section-title">CJENIK</h2>
+  
+  <!-- Ovaj mali stil dodaješ samo za ovu tablicu da se odvoje cijene -->
+  <style>
+    .cjenik-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+    .cjenik-table th, .cjenik-table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd; /* Suptilna crta između redova */
+    }
+    .cjenik-table th {
+      border-bottom: 2px solid #000; /* Podebljana gornja crta za zaglavlje */
+    }
+    .cjenik-table td:last-child, .cjenik-table th:last-child {
+      text-align: right; /* Gura cijene skroz desno, odvojeno od usluga */
+      font-weight: bold; /* Podebljava cijene za bolju uočljivost */
+    }
+  </style>
+
+  <table class="cjenik-table">
+    <thead>
+      <tr>
+        <th style="text-align: left;">Stavka</th>
+        <th>Cijena</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left;">Noćenje (redovna cijena)</td>
+        <td>80 €</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Usidrena cijena (na dan 10.9.2026.)</td>
+        <td>80 €</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Minimalni boravak</td>
+        <td>2 noći</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Boravišna pristojba</td>
+        <td>Uključeno</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Završno čišćenje</td>
+        <td>Uključeno</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Prijava</td>
+        <td>Uključeno</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="price-note fl-margin-bottom">Napomena: Usluga je oslobođena PDV-a prema čl. 90. st. 2. Zakona o PDV-u.</p>
+  <p class="price-note fl-margin-bottom">Cijena je informativna i vrijedi za izravne rezervacije.</p>
+</div>
+
+<div class="fl-content fl-container fl-padding-24">
+  
+  <style>
+    /* Stilovi za gumb na širenje (Accordion) */
+    .fl-harmonika {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .fl-harmonika summary {
+      padding: 15px;
+      background-color: #f1f1f1;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      transition: background-color 0.2s ease;
+    }
+    .fl-harmonika summary:hover {
+      background-color: #e0e0e0;
+    }
+    .fl-harmonika-sadrzaj {
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+    
+    /* Postojeći stilovi za unutrašnjost */
+    .fl-uredjena-lista {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .fl-uredjena-lista li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .fl-uredjena-lista li:last-child {
+      border-bottom: none;
+    }
+    .fl-naglaseno {
+      font-weight: bold;
+    }
+    .fl-info-kartica {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #44775b;
+      margin-top: 15px;
+    }
+    .section-title-mini {
+      margin-top: 0;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- === GUMB 1: UVJETI === -->
+  <details class="fl-harmonika">
+    <summary>Uvjeti rezervacije i otkazivanja</summary>
+    <div class="fl-harmonika-sadrzaj">
+      <h2 class="section-title-mini">UVJETI REZERVACIJE I OTKAZIVANJA</h2>
+      <p class="conditions-text" style="margin: 0 0 10px 0;">Rezervacija se vrši putem kontakt forme, e-maila ili telefona.</p>
+      
+      <ul class="fl-uredjena-lista">
+        <li><span class="fl-naglaseno">Akontacija:</span> iznosi 30% u roku 48 sati od potvrde rezervacije.</li>
+        <li><span class="fl-naglaseno">Preostali iznos:</span> od 70% plaća se pri dolasku.</li>
+        <li><span class="fl-naglaseno">Besplatno otkazivanje:</span> moguće je do 14 dana prije dolaska, uz povrat akontacije.</li>
+        <li><span class="fl-naglaseno">Kasno otkazivanje:</span> nakon 14 dana prije dolaska, akontacija se zadržava.</li>
+        <li><span class="fl-naglaseno">Check-in:</span> je od 15:00 sati.</li>
+        <li><span class="fl-naglaseno">Check-out:</span> je do 10:00 sati.</li>
+        <li><span class="fl-naglaseno">Kućni red:</span> zabranjeno je pušenje i boravak kućnih ljubimaca.</li>
+        <li><span class="fl-naglaseno">Noćni mir:</span> od 22:00 do 08:00 sati.</li>
+        <li><span class="fl-naglaseno">Sigurnost:</span> gosti su dužni poštovati sigurnosne upute objekta.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- === GUMB 2: GDPR === -->
+  <details class="fl-harmonika">
+    <summary>Pravila privatnosti (GDPR)</summary>
+    <div class="fl-harmonika-sadrzaj">
+      <h2 class="section-title-mini">PRAVILA PRIVATNOSTI (GDPR)</h2>
+      <p class="gdpr-text" style="margin: 0 0 10px 0;">Prikupljaju se podaci o imenu, prezimenu, e-mail adresi i telefonu za potrebe upita te podaci za eVisitor pri dolasku.</p>
+      
+      <ul class="fl-uredjena-lista">
+        <li><span class="fl-naglaseno">Svrha prikupljanja:</span> Podaci se obrađuju isključivo u svrhu rezervacije smještaja i zakonske prijave gostiju.</li>
+        <li><span class="fl-naglaseno">Kolačići:</span> Nužni tehnički kolačići koriste se radi pravilnog i sigurnog funkcioniranja stranice.</li>
+      </ul>
+
+      <div class="fl-info-kartica">
+        <p style="margin:0;"><span class="fl-naglaseno">Kontakt za privatnost:</span> <a href="mailto:damir.velez@gmail.com">damir.velez@gmail.com</a></p>
+      </div>
+    </div>
+  </details>
+
+  <!-- === GUMB 3: PRIGOVORI === -->
+  <details class="fl-harmonika">
+    <summary>Prigovori potrošača</summary>
+    <div class="fl-harmonika-sadrzaj">
+      <h2 class="section-title-mini">PRIGOVORI POTROŠAČA</h2>
+      <p class="complaint-text" style="margin: 0 0 10px 0;">Sukladno Zakonu o zaštiti potrošača, pisani prigovor na kvalitetu naših usluga možete poslati elektroničkim putem ili poštom.</p>
+      
+      <div class="fl-info-kartica">
+        <p style="margin-top:0; margin-bottom:6px;"><span class="fl-naglaseno">E-mail adresa:</span> <a href="mailto:damir.velez@gmail.com">damir.velez@gmail.com</a></p>
+        <p style="margin-top:0; margin-bottom:6px;"><span class="fl-naglaseno">Poštanska adresa:</span> Damir Arambašić, Banova ul. 97, 31000 Osijek</p>
+        <p style="margin-top:6px; margin-bottom:0; border-top:1px solid #ccc; padding-top:6px; font-size:14px; font-style: italic;">
+          <span class="fl-naglaseno">Rok za odgovor:</span> Odgovor na vaš prigovor dostavit ćemo u pisanom obliku u roku od <span class="fl-naglaseno">15 dana</span> od dana primitka.
+        </p>
+      </div>
+    </div>
+  </details>
+
 </div>
 
 <div class="fl-row fl-center fl-dark-grey fl-padding-16">
@@ -128,95 +315,177 @@ body, html {
   </div>
 </div>
 
-<div class="fl-content fl-container fl-padding-64" id="galerija">
+<!-- ========================================== -->
+<!-- 1. GALERIJA DIREKTNO NA STRANICI (PREMIUM)  -->
+<!-- ========================================== -->
+<div class="fl-content fl-container fl-padding-64" id="galerija-sekcija">
     <h3 class="fl-center">Galerija Apartmana Festina Lente</h3>
     <p class="fl-center"><em>Istražite Naš Prostor: Pogledajte Fotografije Našeg Prekrasnog Apartmana u Donjem Gradu, Osijek</em></p><br>
 
-    <div class="fl-row-padding fl-center">
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-dnevna.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-dnevna" loading="lazy">
-        </div>
+    <style>
+        /* Stilovi za preglednik na samoj stranici */
+        .fl-glavni-preglednik {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+            position: relative;
+            aspect-ratio: 4 / 3 !important; /* Sprječava CLS trzanje stranice */
+        }
+        .fl-glavni-preglednik img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover !important;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            cursor: pointer;
+            display: block;
+        }
+        .fl-stranica-minijature-niz {
+            display: flex !important;
+            gap: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow-x: auto;
+            padding: 5px 2px 15px 2px;
+            scrollbar-width: none;
+        }
+        .fl-stranica-minijature-niz::-webkit-scrollbar { display: none; }
+        .fl-stranica-mini-img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover !important;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 0.5;
+            border: 2px solid transparent;
+            transition: opacity 0.2s, border-color 0.2s;
+            flex-shrink: 0;
+        }
+        .fl-stranica-mini-img:hover { opacity: 0.8; }
+        .fl-stranica-mini-img.aktivna-mini {
+            opacity: 1 !important;
+            border-color: #44775b;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
 
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-kupaonica-2.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-kupaonica-2" loading="lazy">
-        </div>
+        /* Stilovi za veliki modalni prozor (Zamagljeno staklo + Centrirano) */
+        #modal01 {
+            z-index: 9999 !important;
+            background-color: rgba(0, 0, 0, 0.85) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            display: none;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+            position: fixed !important;
+            left: 0; top: 0; width: 100%; height: 100%;
+        }
+        .fl-zatvori-modal {
+            position: fixed !important;
+            top: 20px !important;
+            right: 20px !important;
+            color: #fff !important;
+            font-size: 34px !important;
+            cursor: pointer !important;
+            z-index: 10000 !important;
+            opacity: 0.7;
+            transition: transform 0.2s, opacity 0.2s !important;
+        }
+        .fl-zatvori-modal:hover { transform: scale(1.1); opacity: 1; }
+        .fl-modal-okvir {
+            max-width: 80% !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #img01 {
+            max-height: 60vh !important;
+            max-width: 100% !important;
+            width: auto !important;
+            height: auto !important;
+            border-radius: 8px !important;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6) !important;
+            display: block;
+        }
+        #caption {
+            color: #fff !important;
+            font-family: "Segoe UI", Arial, sans-serif !important;
+            font-size: 14px !important;
+            letter-spacing: 1.5px !important;
+            margin: 12px 0 25px 0 !important;
+            text-transform: uppercase !important;
+            opacity: 0.9 !important;
+            text-align: center !important;
+        }
+        .fl-modal-minijature-kontejner {
+            display: flex !important;
+            gap: 8px !important;
+            max-width: 100% !important;
+            overflow-x: auto !important;
+            padding: 5px 10px !important;
+            scrollbar-width: none;
+        }
+        .fl-modal-minijature-kontejner::-webkit-scrollbar { display: none; }
+        .fl-mini-slika {
+            width: 60px;
+            height: 45px;
+            object-fit: cover !important;
+            border-radius: 4px !important;
+            cursor: pointer !important;
+            opacity: 0.4;
+            border: 2px solid transparent;
+            transition: opacity 0.2s, border-color 0.2s !important;
+            flex-shrink: 0 !important;
+        }
+        .fl-mini-slika:hover { opacity: 0.8; }
+        .fl-mini-slika.aktivna {
+            opacity: 1 !important;
+            border-color: #fff !important;
+            box-shadow: 0 0 8px rgba(255,255,255,0.5) !important;
+        }
 
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-kuhinja.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-kuhinja" loading="lazy">
-        </div>
+        @media (max-width: 600px) {
+            .fl-stranica-mini-img { width: 65px; height: 48px; }
+            .fl-modal-okvir { max-width: 95% !important; }
+            #img01 { max-height: 50vh !important; }
+            .fl-mini-slika { width: 50px !important; height: 38px !important; }
+        }
+    </style>
 
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-spavaca-2.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-spavaca-2" loading="lazy">
-        </div>
+    <!-- Velika slika na stranici (Klik na nju otvara veliki modal) -->
+    <div class="fl-glavni-preglednik">
+        <img id="glavnaSlikaNaStranici" src="./images/festina-lente-dnevna.webp" width="800" height="600" onclick="otvoriVelikiProzor()" class="fl-hover-opacity" alt="festina-lente-dnevna" loading="lazy">
     </div>
 
-    <div class="fl-row-padding fl-center fl-section">
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-terasa.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-terasa" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-kupaonica-3.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-kupaonica-3" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-spavaca.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-spavaca" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-dnevna-2.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-dnevna-2" loading="lazy">
-        </div>
+    <!-- Traka s malim prozorčićima na samoj stranici -->
+    <div class="fl-stranica-minijature-niz" id="trakaMinijaturaNaStranici">
+        <img src="./images/festina-lente-dnevna.webp" class="fl-stranica-mini-img aktivna-mini" onclick="promijeniGlavnuSliku(this, 0)" alt="festina-lente-dnevna">
+        <img src="./images/festina-lente-kupaonica-2.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 1)" alt="festina-lente-kupaonica-2">
+        <img src="./images/festina-lente-kuhinja.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 2)" alt="festina-lente-kuhinja">
+        <img src="./images/festina-lente-spavaca-2.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 3)" alt="festina-lente-spavaca-2">
+        <img src="./images/festina-lente-terasa.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 4)" alt="festina-lente-terasa">
+        <img src="./images/festina-lente-kupaonica-3.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 5)" alt="festina-lente-kupaonica-3">
+        <img src="./images/festina-lente-spavaca.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 6)" alt="festina-lente-spavaca">
+        <img src="./images/festina-lente-dnevna-2.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 7)" alt="festina-lente-dnevna-2">
+        <img src="./images/festina-lente-spavaca-3.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 8)" alt="festina-lente-spavaca-3">
+        <img src="./images/festina-lente-pogled.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 9)" alt="festina-lente-pogled">
+        <img src="./images/festina-lente-terasa-2.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 10)" alt="festina-lente-terasa-2">
+        <img src="./images/festina-lente-parking.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 12)" alt="festina-lente-parking">
+        <img src="./images/festina-lente-apartman.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 14)" alt="festina-lente-apartman">
+        <img src="./images/festina-lente-park.webp" class="fl-stranica-mini-img" onclick="promijeniGlavnuSliku(this, 15)" alt="festina-lente-park">
     </div>
-
-    <div class="fl-row-padding fl-center fl-section">
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-spavaca-3.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-spavaca-3" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-pogled.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-pogled" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-terasa-2.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-terasa-2" loading="lazy">
-        </div>
-
-        <div class="fl-col m3">
-        <img src="./images/festina-lente-spavaca-3.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-spavaca-3" loading="lazy">
-        </div>
-    </div>
-
-    <div class="fl-row-padding fl-center fl-section">
-      <div class="fl-col m3">
-      <img src="./images/festina-lente-parking.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-parking" loading="lazy">
-      </div>
-
-      <div class="fl-col m3">
-      <img src="./images/festina-lente-garaza.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-garaza" loading="lazy">
-      </div>
-
-      <div class="fl-col m3">
-      <img src="./images/festina-lente-apartman.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-apartman" loading="lazy">
-      </div>
-
-      <div class="fl-col m3">
-      <img src="./images/festina-lente-park.webp" style="width:100%" onclick="onClick(this)" class="fl-hover-opacity" alt="festina-lente-park" loading="lazy">
-      </div>
-  </div>
-</div>
 </div>
 
-<div id="modal01" class="fl-modal fl-black" onclick="this.style.display='none'">
-  <span class="fl-button fl-large fl-black fl-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="fl-modal-content fl-animate-zoom fl-center fl-transparent fl-padding-64">
-    <img id="img01" class="fl-image" title="image">
-    <p id="caption" class="fl-opacity fl-large"></p>
-  </div>
-</div>
-
-<div class="bgimg-3 fl-display-container fl-opacity-min">
-  <div class="fl-display-middle">
-     <span class="fl-xxlarge fl-text-white fl-wide">KONTAKT</span>
+<!-- ========================================== -->
+<!-- 2. SKRIVENI MODALNI PROZOR S MINIJATURAMA  -->
+<!-- ========================================== -->
+<div id="modal01" class="fl-modal" onclick="document.getElementById('modal01').style.display='none'">
+  <span class="fl-zatvori-modal" onclick="document.getElementById('modal01').style.display='none'" title="Zatvori"><i class="fa fa-remove"></i></span>
+  <div class="fl-modal-okvir fl-animate-zoom" onclick="event.stopPropagation()">
+    <img id="img01" class="fl-image" alt="Pregled">
+    <p id="caption"></p>
+    <div id="modalMinijature" class="fl-modal-minijature-kontejner"></div>
   </div>
 </div>
 
@@ -225,7 +494,14 @@ body, html {
   <p class="fl-center"><em>Za sva dodatna pitanja, javite nam se putem kontakta</em></p>
   <div class="fl-row fl-padding-32 fl-section">
     <div class="fl-col m4 fl-container">
-      <img src="./images/festina-lente-dnevna-3.webp" alt="kontakt" class="fl-image fl-round" style="width:100%" loading="lazy">
+    <!-- Dimenzije su promijenjene na 300x400 i omjer na 3/4 za viši i elegantniji izgled -->
+    <img src="./images/festina-lente-dnevna-3.webp" 
+         alt="kontakt" 
+         class="fl-image fl-round" 
+         width="300" 
+         height="400" 
+         style="width: 100% !important; height: auto !important; aspect-ratio: 3 / 4 !important; object-fit: cover !important;" 
+         loading="lazy">
     </div>
     <div class="fl-col m8 fl-panel">
       <div class="fl-large fl-margin-bottom">
@@ -258,26 +534,170 @@ body, html {
 </div>
 
 <footer class="fl-center fl-dark-grey fl-padding-64">
-  <a href="#naslovna" class="fl-button fl-light-grey"><i class="fa fa-arrow-up fl-margin-right"></i>Vrati se na vrh</a>
-  <div class="fl-xlarge fl-section">
-    <a href="mailto:damir.velez@gmail.com" class="fa fa-envelope fl-hover-opacity" title="mail"></a>
-    <a href="https://wa.me/385911776077" class="fab fa-whatsapp fl-hover-opacity" title="whatsapp"></a>
-    <a href="viber://chat?number=%2B385911776077" class="fab fa-viber fl-hover-opacity" title="viber"></a>
-  </div>
-  <p>Apartman Festina Lente © 2025. Sva prava pridržana.</p>
-  <p>Ova web stranica koristi kolačiće za poboljšanje korisničkog iskustva. Korištenjem ove web stranice pristajete na korištenje kolačića.</p>
-  <p>Ovu web stranicu je izradio i razvio <a href="https://www.frontvisionx.hr" target="_blank" class="fl-hover-opacity" rel="noopener">FRONTVISIONX</a>.</p> 
-</footer>
- 
-<script>
+  <!-- Gumb za povratak na vrh -->
+  <a href="#naslovna" class="fl-button fl-light-grey fl-round" style="margin-bottom: 30px;">
+    <i class="fa fa-arrow-up fl-margin-right"></i>Vrati se na vrh
+  </a>
 
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+  <!-- Ikone za brzi kontakt -->
+  <div class="fl-xlarge fl-section">
+    <a href="mailto:damir.velez@gmail.com" class="fa fa-envelope fl-hover-opacity" title="E-mail" style="margin: 0 10px; text-decoration: none;"></a>
+    <a href="https://wa.me/385911776077" class="fab fa-whatsapp fl-hover-opacity" title="WhatsApp" style="margin: 0 10px; text-decoration: none;"></a>
+    <a href="viber://chat?number=%2B385911776077" class="fab fa-viber fl-hover-opacity" title="Viber" style="margin: 0 10px; text-decoration: none;"></a>
+  </div>
+
+  <!-- Službeni podaci o domaćinu i objektu -->
+  <div class="footer-info-block" style="max-width: 600px; margin: 20px auto; padding: 0 15px; font-size: 15px; line-height: 1.6;">
+    <p style="margin: 5px 0;"><strong>Damir Arambašić</strong> | Banova ul. 97, 31000 Osijek</p>
+    <p style="margin: 5px 0;">OIB: 05326952309 | Tel: +385 91 177 6077 | E-mail: damir.velez@gmail.com</p>
+    <p style="margin: 5px 0; opacity: 0.9;">Kategorizacija: Apartman s 4 zvjezdice | eVisitor broj: _________________</p>
+  </div>
+
+  <!-- Zakonski XML cjenik za inspekciju -->
+    <!-- Zakonski XML cjenik za inspekciju -->
+  <div style="margin: 25px 0;">
+    <a href="./cjenik_FestinaLente_05326952309.xml" target="_blank" class="fl-button fl-white fl-round fl-small" style="font-weight: bold; text-decoration: none; padding: 6px 12px;">
+      <i class="fa fa-file-code fl-margin-right"></i>Službeni XML cjenik
+    </a>
+  </div>
+
+  <!-- Donji dio footera: Autorska prava, GDPR i Izrada weba -->
+  <div class="footer-bottom-text" style="font-size: 13px; opacity: 0.75; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 30px; padding-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <p style="margin: 5px 0;">Apartman Festina Lente &copy; 2026. Sva prava pridržana.</p>
+    <p style="margin: 5px 0; padding: 0 15px;">Ova web stranica koristi isključivo nužne tehničke kolačiće u svrhu osiguravanja pravilnog rada stranice.</p>
+    <p style="margin: 15px 0 0 0;">
+      Izrada i razvoj stranice: 
+      <a href="https://www.frontvisionx.hr" target="_blank" class="fl-hover-opacity" rel="noopener" style="font-weight: bold; text-decoration: underline; color: #fff;">FRONTVISIONX</a>
+    </p>
+  </div> 
+</footer>
+
+<script>
+// --- POTPUNO SINKRONIZIRANI SUSTAV GALERIJE I MODALA ---
+var trenutniIndeks = 0;
+var sveSlikeIzTrake = [];
+var touchStartX = 0;
+var touchEndX = 0;
+
+window.addEventListener("DOMContentLoaded", function() {
+  // Dohvaća male sličice sa same stranice
+  sveSlikeIzTrake = Array.from(document.querySelectorAll(".fl-stranica-mini-img"));
+  
+  var modal = document.getElementById("modal01");
+  var minijatureKontejner = document.getElementById("modalMinijature");
+  
+  if (modal) {
+    // Automatsko stvaranje minijatura unutar velikog prozora na dnu
+    if (minijatureKontejner && sveSlikeIzTrake.length > 0) {
+      sveSlikeIzTrake.forEach(function(slika, indeks) {
+        var miniImg = document.createElement("img");
+        miniImg.src = slika.src;
+        miniImg.classList.add("fl-mini-slika");
+        miniImg.alt = "Modal Mini " + indeks;
+        miniImg.onclick = function(e) {
+          e.stopPropagation();
+          trenutniIndeks = indeks;
+          prikaziSlikuUModalu(trenutniIndeks);
+        };
+        minijatureKontejner.appendChild(miniImg);
+      });
+    }
+
+    // Touch svajpanje prstom na mobitelu unutar velikog prozora
+    modal.addEventListener("touchstart", function(e) { touchStartX = e.changedTouches[0].screenX; });
+    modal.addEventListener("touchend", function(e) { touchEndX = e.changedTouches[0].screenX; handleSwipe(); });
+    
+    // Lebdeće bijele strelice za desktop bez pozadinskih kutija
+    if (!document.getElementById("btnPrev")) {
+      var btnPrev = document.createElement("button");
+      btnPrev.id = "btnPrev"; btnPrev.innerHTML = "❮";
+      btnPrev.style = "position:absolute; top:50%; left:20px; transform:translateY(-50%); background:transparent; color:#fff; border:none; padding:10px; font-size:42px; cursor:pointer; z-index:10; text-shadow: 0px 2px 10px rgba(0,0,0,0.8); opacity:0.6; transition:opacity 0.2s, transform 0.2s;";
+      btnPrev.onmouseover = function() { this.style.opacity = "1"; this.style.transform = "translateY(-50%) scale(1.15)"; };
+      btnPrev.onmouseout = function() { this.style.opacity = "0.6"; this.style.transform = "translateY(-50%) scale(1)"; };
+      btnPrev.onclick = function(e) { e.stopPropagation(); promijeniSlikuUModalu(-1); };
+      modal.appendChild(btnPrev);
+      
+      var btnNext = document.createElement("button");
+      btnNext.id = "btnNext"; btnNext.innerHTML = "❯";
+      btnNext.style = "position:absolute; top:50%; right:20px; transform:translateY(-50%); background:transparent; color:#fff; border:none; padding:10px; font-size:42px; cursor:pointer; z-index:10; text-shadow: 0px 2px 10px rgba(0,0,0,0.8); opacity:0.6; transition:opacity 0.2s, transform 0.2s;";
+      btnNext.onmouseover = function() { this.style.opacity = "1"; this.style.transform = "translateY(-50%) scale(1.15)"; };
+      btnNext.onmouseout = function() { this.style.opacity = "0.6"; this.style.transform = "translateY(-50%) scale(1)"; };
+      btnNext.onclick = function(e) { e.stopPropagation(); promijeniSlikuUModalu(1); };
+      modal.appendChild(btnNext);
+    }
+  }
+});
+
+// Kontrola rada galerije na samoj stranici
+function promijeniGlavnuSliku(miniElement, indeks) {
+    var glavnaSlika = document.getElementById("glavnaSlikaNaStranici");
+    glavnaSlika.src = miniElement.src;
+    glavnaSlika.alt = miniElement.alt;
+    trenutniIndeks = indeks;
+    
+    var sveMini = document.querySelectorAll(".fl-stranica-mini-img");
+    sveMini.forEach(function(mini) { mini.classList.remove("aktivna-mini"); });
+    miniElement.classList.add("aktivna-mini");
+    
+    miniElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 }
 
+// Otvaranje velikog prozora na klik velike slike sa stranice
+function otvoriVelikiProzor() {
+  prikaziSlikuUModalu(trenutniIndeks);
+  document.getElementById("modal01").style.display = "flex";
+}
+
+// Osvježavanje unutrašnjosti modala (Velika slika, tekst i donje sličice)
+function prikaziSlikuUModalu(indeks) {
+  if (sveSlikeIzTrake.length === 0) return;
+  var slika = sveSlikeIzTrake[indeks];
+  document.getElementById("img01").src = slika.src;
+  document.getElementById("caption").innerHTML = slika.alt;
+  
+  // Osvježi aktivnu sličicu na dnu modala i skrolaj je u fokus
+  var minijatureModala = document.querySelectorAll(".fl-mini-slika");
+  minijatureModala.forEach(function(mini, idx) {
+    if (idx === indeks) {
+      mini.classList.add("aktivna");
+      mini.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    } else {
+      mini.classList.remove("aktivna");
+    }
+  });
+
+  // Automatski sinkroniziraj i promijeni glavnu sliku u pozadini na stranici
+  var sveMiniStranice = document.querySelectorAll(".fl-stranica-mini-img");
+  if(sveMiniStranice[indeks]) {
+      promijeniGlavnuSliku(sveMiniStranice[indeks], indeks);
+  }
+}
+
+function promijeniSlikuUModalu(smjer) {
+  trenutniIndeks += smjer;
+  if (trenutniIndeks >= sveSlikeIzTrake.length) trenutniIndeks = 0;
+  if (trenutniIndeks < 0) trenutniIndeks = sveSlikeIzTrake.length - 1;
+  prikaziSlikuUModalu(trenutniIndeks);
+}
+
+function handleSwipe() {
+  var razlikaX = touchEndX - touchStartX;
+  if (Math.abs(razlikaX) > 50) {
+    if (razlikaX < 0) { promijeniSlikuUModalu(1); } else { promijeniSlikuUModalu(-1); }
+  }
+}
+
+// Navigacija tipkovnicom računala
+document.addEventListener("keydown", function(e) {
+  var modal = document.getElementById("modal01");
+  if (modal && modal.style.display === "flex") {
+    if (e.key === "ArrowRight") { e.preventDefault(); promijeniSlikuUModalu(1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); promijeniSliku(-1); }
+    if (e.key === "Escape") { modal.style.display = "none"; }
+  }
+});
+
+// --- TVOJE POSTOJEĆE I SIGURNE FUNKCIJE ---
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -297,14 +717,19 @@ function toggleFunction() {
     }
 }
 
-document.getElementById("privacyPolicy").addEventListener("click", function() {
-  var messageElement = document.getElementById("message");
-  if (this.checked) {
-    messageElement.innerHTML = "You have agreed to the privacy policy.";
-  } else {
-    messageElement.innerHTML = "";
-  }
-});
+var privacyCheckbox = document.getElementById("privacyPolicy");
+if (privacyCheckbox) {
+  privacyCheckbox.addEventListener("click", function() {
+    var messageElement = document.getElementById("message");
+    if (messageElement) {
+      if (this.checked) {
+        messageElement.innerHTML = "You have agreed to the privacy policy.";
+      } else {
+        messageElement.innerHTML = "";
+      }
+    }
+  });
+}
 </script>
 
 </body>
